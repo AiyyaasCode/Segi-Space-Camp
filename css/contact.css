@@ -1,0 +1,249 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "Playpen Sans", sans-serif;
+}
+
+/* Navbar Styling */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 65px;
+    width: 93%;
+    padding: 30px;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 18px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: black;
+    background: #f3961c;
+}
+
+/* Hero Styling */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/images/contact.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Map Styling */
+.map {
+    position: absolute;
+    margin: 140px 0px 0px 80px;
+    border: 5px solid #000000;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    position: absolute;
+    color: #f3961c;
+    background-color: rgba(143, 143, 143, 0.3);
+    backdrop-filter: blur(30px);
+    margin: 515px 0px 0px 80px;
+    width: 640px;
+    border-radius: 30px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: #f3961c;
+}
+
+.contact-text b {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    font-size: 16px;
+    margin: 0;
+    color: #f3961c;
+}
+
+.contact-text a:hover {
+    opacity: 0.7;
+}
+
+/* Contact Us Form Styling */
+.contact-form {
+    position: absolute;
+    height: 650px;
+    width: 650px;
+    top: 52%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    padding: 30px 50px;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(242, 255, 0);
+    margin-bottom: 2px;
+}
+
+label {
+    color: rgb(0, 255, 157);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 157, 0.3);
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+textarea {
+    outline: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 157, 0.3);
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 6px;
+    padding: 15px;
+    resize: none;
+    overflow: auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+button {
+    width: 30%;
+    height: 45px;
+    margin: 10px 0px 0px 200px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    color: #000000;
+    background: #ffee00;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #f3961c;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: #f3961c;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.bxl-facebook-circle:hover,
+.bxl-instagram-alt:hover,
+.bxl-twitter:hover {
+    opacity: 0.6;
+}
+
+.payment-policy {
+    margin-right: 70px;
+}
+
+.payment-policy:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .input-field {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,200 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Miniver&family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    font-family: "Playpen Sans", sans-serif;
+}
+
+/* Navbar Styling */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 65px;
+    width: 93%;
+    padding: 30px;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 18px;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: black;
+    background: #f3961c;
+}
+
+/* Hero Styling */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/images/home.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text-container {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgba(146, 21, 255, 0.2);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    border-radius: 50px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 50px;
+}
+
+.text-container h1 {
+    margin-top: 10px;
+    font-size: 45px;
+    color: #f3961c;
+}
+
+.description {
+    margin: 15px 0px 0px 20px;
+    font-size: 17px;
+}
+
+/* Register Now Button */
+.register-now {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: #f3961c;
+    padding: 10px 26px;
+    margin: 0 30px 15px -10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-now:hover {
+    color: white;
+    border-color: white;
+    background: transparent;
+}
+
+/* Learn More Button */
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 26px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.learn-more:hover {
+    color: black;
+    background-color: #f3961c;
+    border-color: #f3961c;
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #f3961c;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: #f3961c;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.bxl-facebook-circle:hover,
+.bxl-instagram-alt:hover,
+.bxl-twitter:hover {
+    opacity: 0.6;
+}
+
+.payment-policy {
+    margin-right: 70px;
+}
+
+.payment-policy:hover {
+    opacity: 0.6;
+}
+
+/* Responsive Media Query Code For Max Width 900px */
+
+@media screen and (max-width: 900px) {
+    .nav-menu {
+        display: block;
+        background: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .nav-link {
+        color: black;
+        display: block;
+        margin-top: 17px;
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Space Event Website -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SEGi | Register</title>
+        <link rel="stylesheet" href="/css/register.css" />
+
+        <!-- Importing Input Icons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Header -->
+        <header>
+            <nav class="navbar">
+                <p class="nav-logo">🪐 SEGi</p>
+                <ul class="nav-menu">
+                    <li><a href="/home.html" class="nav-link"> Home </a></li>
+                    <li><a href="about.html" class="nav-link"> About Us </a></li>
+                    <li><a href="event.html" class="nav-link"> Event Info </a></li>
+                    <li><a href="register.html" class="nav-link"> Registration </a></li>
+                    <li><a href="contact.html" class="nav-link"> Contact Us </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero-image">
+            <div class="text-container">
+                <div class="title">Registration Form</div>
+                <br />
+                <form id="registrationForm">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label> <br />
+                            <input type="text" name="name" placeholder="Enter your name" required />
+                            <i class="bx bxs-user"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <label> Age </label> <br />
+                            <select id="age" name="age" required>
+                                <option value="" disabled selected>Select Age</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
+                            <i class="bx bxs-calendar"></i>
+                        </div>
+                    </div>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label> Email </label> <br />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                            <i class="bx bxs-envelope"></i>
+                        </div>
+
+                        <div class="input-field">
+                            <label> Contact Number </label> <br />
+                            <input
+                                type="phone"
+                                name="phone"
+                                placeholder="Enter your contact number"
+                                required
+                            />
+                            <i class="bx bxs-phone"></i>
+                        </div>
+                    </div>
+
+                    <input class="checkbox-text" type="checkbox" required />
+                    I hereby declare the above information provided is true. <br />
+                    <input class="checkbox-text" type="checkbox" required />
+                    I have read the
+                    <a class="policy-link" href="policy.html"> Payment policy. </a> <br />
+                    <button type="submit" name="save">Register</button>
+                </form>
+                <br />
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-text">
+                <p class="copyright-text">☆ Shuriya Jayaseelan ☆</p>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/SEGiCollegePenang/" target="_blank">
+                        <i class="bx bxl-facebook-circle"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/segicollegepenang/" target="_blank">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+
+                    <a href="https://x.com/segicollegepg" target="_blank">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+
+                <p class="payment-policy">
+                    <a href="policy.html"> Payment Policy </a>
+                </p>
+            </div>
+        </footer>
+        <script src="/javascript/register.js"></script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Space Event Website -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SEGi | Contact Us</title>
+        <link rel="stylesheet" href="/css/contact.css" />
+
+        <!-- Importing Input Icons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation Header -->
+        <header>
+            <nav class="navbar">
+                <p class="nav-logo">🪐 SEGi</p>
+                <ul class="nav-menu">
+                    <li><a href="/home.html" class="nav-link"> Home </a></li>
+                    <li><a href="about.html" class="nav-link"> About Us </a></li>
+                    <li><a href="event.html" class="nav-link"> Event Info </a></li>
+                    <li><a href="register.html" class="nav-link"> Registration </a></li>
+                    <li><a href="contact.html" class="nav-link"> Contact Us </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero-image">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.961613221321!2d100.33708457523267!3d5.422803494556453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3853c19eabd%3A0xf18e216f6994764b!2sSEGi%20College%20Penang!5e0!3m2!1sen!2smy!4v1733252569802!5m2!1sen!2smy"
+                    width="630"
+                    height="330"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="bx bxs-map"></i>
+                    <div class="contact-text">
+                        <b>Address</b>
+                        <p>Wisma Greenhall 43, Green Hall, 10200 George Town, Pulau Pinang</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bxs-phone"></i>
+                    <div class="contact-text">
+                        <b>Phone</b>
+                        <p>+604 263 3888</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="bx bxs-envelope"></i>
+                    <div class="contact-text">
+                        <b>Email</b>
+                        <p><a href="mailto:infopg@segi.edu.my">Infopg@segi.edu.my</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="title">Get in Touch!</div>
+                <br />
+                <form id="contactForm">
+                    <div class="fields">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required />
+                        </div>
+                        <br />
+                        <div>
+                            <label> Email </label>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
+                        <br />
+                        <div>
+                            <label> Message </label>
+                            <textarea
+                                class="input"
+                                cols="53"
+                                rows="8"
+                                name="message"
+                                placeholder="Your message"
+                                required
+                            ></textarea>
+                        </div>
+                        <br />
+                    </div>
+                    <button type="submit" name="save">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-text">
+                <p class="copyright-text">☆ Shuriya Jayaseelan ☆</p>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/SEGiCollegePenang/" target="_blank">
+                        <i class="bx bxl-facebook-circle"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/segicollegepenang/" target="_blank">
+                        <i class="bx bxl-instagram-alt"></i>
+                    </a>
+
+                    <a href="https://x.com/segicollegepg" target="_blank">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+
+                <p class="payment-policy">
+                    <a href="policy.html"> Payment Policy </a>
+                </p>
+            </div>
+        </footer>
+        <script src="/javascript/contact.js"></script>
+    </body>
+</html>
