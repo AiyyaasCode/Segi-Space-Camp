@@ -132,8 +132,7 @@ label {
     width: 100%;
     outline: none;
     color: #ffffff;
-    background: transparent;
-    background-color: #6a6a6a00;
+    background-color: rgba(71, 63, 63, 0.522);
     border: 2px solid rgb(0, 255, 157, 0.3);
     height: 42px;
     font-size: 17px;
