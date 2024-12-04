@@ -59,7 +59,7 @@ header {
 /* Hero Styling */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("/images/home.jpg");
+        url("policy.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,68 +68,33 @@ header {
 }
 
 .text-container {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    background-color: rgba(146, 21, 255, 0.2);
-    backdrop-filter: blur(3px);
     text-align: center;
-    border-radius: 50px;
-    width: 50%;
-    top: 50%;
+    position: absolute;
+    top: 52%;
     left: 50%;
+    width: 70%;
+    font-size: 16px;
+    text-align: center;
     transform: translate(-50%, -50%);
-    padding: 15px 50px;
+    color: rgba(255, 255, 255, 0.823);
+    background-color: rgba(0, 213, 255, 0.068);
+    backdrop-filter: blur(42px);
+    border-radius: 40px;
+    padding: 25px;
 }
 
-.text-container h1 {
-    margin-top: 10px;
-    font-size: 45px;
-    color: #f3961c;
+hr {
+    border: 1px solid white;
+    width: 460px;
+    margin-left: 290px ;
 }
 
-.description {
-    margin: 15px 0px 0px 20px;
-    font-size: 17px;
+b {
+    color: rgb(255, 255, 0);
 }
 
-/* Register Now Button */
-.register-now {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    background-color: #f3961c;
-    padding: 10px 26px;
-    margin: 0 30px 15px -10px;
-    border: 2px solid transparent;
-    border-radius: 30px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.register-now:hover {
+.text-container p {
     color: white;
-    border-color: white;
-    background: transparent;
-}
-
-/* Learn More Button */
-.learn-more {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 10px 26px;
-    border: 2px solid;
-    border-radius: 30px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.learn-more:hover {
-    color: black;
-    background-color: #f3961c;
-    border-color: #f3961c;
 }
 
 /* Footer Styling */
@@ -167,34 +132,9 @@ a {
 }
 
 .payment-policy {
-    margin-right: 70px;
+    margin-right: 75px;
 }
 
 .payment-policy:hover {
     opacity: 0.6;
-}
-
-/* Responsive Media Query Code For Max Width 900px */
-
-@media screen and (max-width: 900px) {
-    .nav-menu {
-        display: block;
-        background: white;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 300px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-    }
-
-    .nav-link {
-        color: black;
-        display: block;
-        margin-top: 17px;
-        font-size: 21px;
-    }
 }
