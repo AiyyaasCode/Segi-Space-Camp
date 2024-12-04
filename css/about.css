@@ -59,7 +59,7 @@ header {
 /* Hero Styling */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("images/event.jpg");
+        url("/images/about.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,63 +67,30 @@ header {
     position: relative;
 }
 
+img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 100% 0;
+    margin: 250px 0 0 200px;
+    border-radius: 100%;
+    border: 5px solid #f3961c;
+}
+
+
 .text-container {
     position: absolute;
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(8px);
-    padding: 20px 30px;
+    text-align: justify;
+    color: rgb(255, 243, 12);
     font-size: 16.5px;
-    top: 52%;
-    left: 24%;
+    top: 53%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    border-radius: 60px;
-}
-
-hr {
-    border: 1px solid #000000;
-}
-
-/* Images */
-.images-wrapper {
-    position: absolute;
-    color: rgb(43, 255, 0);
-    margin: 165px 0 200px 770px;
-}
-
-img {
-    border-radius: 40px;
-    margin-right: 30px;
-    border: 2px solid #cc01ff;
-    transition: 0.3s ease;
-}
-
-img:hover {
-    border: 2px solid #f3961c;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-/* Register Now Button */
-.register-now {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    background-color: #f3961c;
-    margin-left: 1020px;
-    margin-top: 680px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 12px 25px;
-    border: 2px solid #f3961c;
-    border-radius: 50px;
-    transition: 0.3s ease;
-}
-
-.register-now:hover {
-    color: white;
-    border-color: white;
-    background: transparent;
+    width: 43%;
+    padding: 25px 35px;
+    background-color: rgba(0, 0, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 
 /* Footer Styling */
