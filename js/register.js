@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault(); // Prevent the form from refreshing the page
 
         // Set the custom "current" date 
-        const currentDate = new Date("2024-10-10"); 
+        const currentDate = new Date("2024-10-20"); 
         const cutoffDate = new Date("2024-10-16"); // Early bird cutoff date
 
         // Check if the user registers before or after the cutoff date
